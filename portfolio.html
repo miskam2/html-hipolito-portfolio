@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - HIPOLITO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+   
+    <div class="video-background">
+        <video autoplay muted loop id="galaxyVideo">
+            <source src="galaxy.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    
+    <div class="content-overlay">
+        <header>
+            <div class="header-content">
+                <div class="brand">MIS<strong>KAM</strong></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="showSidebar()">&#9776;</div>
+        </header>
+
+        <nav class="sidebar">
+            <span class="close-button" onclick="hideSidebar()">&#10006;</span>
+            <ul>
+                <li><a href="#home" onclick="hideSidebar()">Home</a></li>
+                <li><a href="#about" onclick="hideSidebar()">About Me</a></li>
+                <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content" id="main-content">
+            <section id="home" class="home-section">
+                <div class="hero-container">
+                    <div class="hero">
+                        <img src="eto.png" alt="Profile" class="profile-image">
+                        <div class="hero-text">
+                            <h1>Hi, I'm <strong>Josh Maksim C. Hipolito</strong></h1>
+                            <p>A BSEMC student from University Of Caloocan City</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <h2>About <strong>Me</strong></h2>
+                    <p>Name: Josh Maksim C. Hipolito</p>
+                    <p>Age: 20 years old</p>
+                    <p>Height: 180cm</p>
+                    <p>Hobbies: Playing Guitar, Reading Manhwa, Playing Video Games</p>
+                </div>
+                <img src="eto2.png" alt="About Me" class="about-image">
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="contact-wrapper">
+                    <div class="contact-image-container">
+                       
+                    </div>
+                    <div class="socials-container">
+                        <h2>Contact <strong>Me</strong></h2>
+                        
+                        <div class="social-box email-box">
+                            <div class="social-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-platform">Email</span>
+                                <span class="social-username">joshmaksimhipolito@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-box phone-box">
+                            <div class="social-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-platform">Phone</span>
+                                <span class="social-username">+123 456 7890</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="social-box facebook-box">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-platform">Facebook</span>
+                                <span class="social-username">joshmaksimhipolito</span>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="social-box instagram-box">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-platform">Instagram</span>
+                                <span class="social-username">Joshy</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
